@@ -1,0 +1,141 @@
+10개의 원소를 가진 정수형 [배열]에 2부터 20까지 짝수 넣고  합 (for)반복문
+void setup() {
+Serial.begin(9600);
+int evennumber[10];
+for(int i=0; i<10; i++){
+evennumber[i] = (i+1)*2;
+}int count = 0;
+for(int i=0; i<10; i++){
+count = count + evennumber[i];
+}
+Serial.println(count);
+}
+void loop() {
+}
+
+10개의 원소를 가진 정수형 [배열]에 2부터 20까지 짝수 넣고  합 (WHILE 반복문)
+void setup() {
+Serial.begin(9600);
+int evennumber[10];
+ int i=0;
+while(i<=10) {
+evennumber[i] = (i+1)*2;
+i++;
+}
+int count = 0 ;
+int j=0;
+while(j<10) {
+count = count + evennumber[j];
+j++;
+}
+Serial.println(count);
+}
+void loop() {
+} 
+
+odd(홀수)
+1)(i*2)+1 홀수 만들기(for문)
+void setup() {
+Serial.begin(9600);
+int oddnumber[10];
+for(int i=0; i<10; i++){
+oddnumber[i] = (i*2)+1;
+}int count = 0;
+for(int i=0; i<10; i++){
+count = count + oddnumber[i];
+}
+Serial.println(count);
+}
+void loop() {
+}
+2)홀수 만들기 (while)
+void setup() {
+Serial.begin(9600);
+int oddnumber[10];
+ int i=0;
+while(i<=10) {
+oddnumber[i] = (i*2)+1;
+i++;
+}
+int count = 0 ;
+int j=0;
+while(j<10) {
+count = count + oddnumber[j];
+j++;
+}
+Serial.println(count);
+}
+void loop() {
+} 
+
+
+3)100 개의 원소를 가진 정수형 배열에 2부터 200까지 짝수 넣고 합 for 
+void setup() {
+Serial.begin(9600);
+int evennumber[100];
+for(int i=0; i<100; i++){
+evennumber[i] = (i+1)*2;
+}int count = 0;
+for(int i=0; i<100; i++){
+count = count + evennumber[i];
+}
+Serial.println(count);
+}
+void loop() {
+}
+
+4)100 개의 원소를 가진 정수형 배열에 2부터 200까지 짝수 넣고 합 while
+void setup() {
+Serial.begin(9600);
+int evennumber[100];
+ int i=0;
+while(i<=100) {
+evennumber[i] = (i+1)*2;
+i++;
+}
+int count = 0 ;
+int j=0;
+while(j<100) {
+count = count + evennumber[j];
+j++;
+}
+Serial.println(count);
+}
+void loop() {
+} 
+
+5) 100개의 원소를 가진 정수형 배열에 1부터 199까지 홀수 넣고 합 (for)
+void setup() {
+Serial.begin(9600);
+int oddnumber[100];
+for(int i=0; i<100; i++){
+oddnumber[i] = (i*2)+1;
+}int count = 0;
+for(int i=0; i<100; i++){
+count = count + oddnumber[i];
+}
+Serial.println(count);
+}
+void loop() {
+}
+
+6)100개의 원소를 가진 정수형 배열에 1부터 199까지 홀수 넣고 합 (while)
+
+void setup() {
+Serial.begin(9600);
+int oddnumber[100];
+ int i=0;
+while(i<=100) {
+oddnumber[i] = (i*2)+1;
+i++;
+}
+int count = 0 ;
+int j=0;
+while(j<100) {
+count = count + oddnumber[j];
+j++;
+}
+Serial.println(count);
+}
+void loop() {
+} 

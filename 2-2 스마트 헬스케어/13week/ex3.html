@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Dog {
+            constructor(color,name,age){
+                this.color = color;
+                this.name = name;
+                this.age = age;
+            }
+            breed(){
+                return this.color + "" + this.name;
+
+            }
+        }
+        var myDog = new Dog("검정색","곰",3);
+        console.log(myDog);
+        console.log( myDog.breed());
+    </script>
+    
+</body>
+</html>

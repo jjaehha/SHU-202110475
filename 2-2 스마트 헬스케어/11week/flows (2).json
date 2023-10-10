@@ -1,0 +1,174 @@
+[
+    {
+        "id": "77912d769d5025b6",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f2aa5d371767722b",
+        "type": "inject",
+        "z": "77912d769d5025b6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "num1",
+                "v": "100",
+                "vt": "num"
+            },
+            {
+                "p": "num2",
+                "v": "200",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "e7416e278013db46"
+            ]
+        ]
+    },
+    {
+        "id": "e7416e278013db46",
+        "type": "function",
+        "z": "77912d769d5025b6",
+        "name": "function 1",
+        "func": "let result = msg.num1 + msg.num2;\n\nmsg.payload = result;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [
+                "b327d13bb95dae9e"
+            ]
+        ]
+    },
+    {
+        "id": "b327d13bb95dae9e",
+        "type": "debug",
+        "z": "77912d769d5025b6",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "71364461c37526ea",
+        "type": "http in",
+        "z": "77912d769d5025b6",
+        "name": "",
+        "url": "/mytest",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "2937ce4bf0e0dbdd"
+            ]
+        ]
+    },
+    {
+        "id": "2937ce4bf0e0dbdd",
+        "type": "function",
+        "z": "77912d769d5025b6",
+        "name": "function 2",
+        "func": "var param = msg.payload;\n\nconsole.log(param);\n\nmsg.payload = {\n    test :{\n        node : \"test\"\n    },\n    obj : param\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "d5a1e786c1a5fd3e"
+            ]
+        ]
+    },
+    {
+        "id": "d5a1e786c1a5fd3e",
+        "type": "http response",
+        "z": "77912d769d5025b6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "04cd4bddc6b4adcd",
+        "type": "http in",
+        "z": "77912d769d5025b6",
+        "name": "",
+        "url": "/plus",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 340,
+        "wires": [
+            [
+                "1a849816fd858d4e"
+            ]
+        ]
+    },
+    {
+        "id": "1a849816fd858d4e",
+        "type": "function",
+        "z": "77912d769d5025b6",
+        "name": "function 3",
+        "func": "let param = msg.payload;\n\nconsole.log(param);\n\nlet result = Number(param.num1) + Number(param.num2)\n\nmsg.payload = {\n    plus : result\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "c33463e89b6890e3"
+            ]
+        ]
+    },
+    {
+        "id": "c33463e89b6890e3",
+        "type": "http response",
+        "z": "77912d769d5025b6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 340,
+        "wires": []
+    }
+]

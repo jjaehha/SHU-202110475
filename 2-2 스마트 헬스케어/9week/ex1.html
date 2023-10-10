@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            margin-right: 10px;
+            background-color: red;
+            float: left;
+        }
+    </style>
+    <script src="jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Header</h1>
+        <h1>Header</h1>
+        <h1 id="message">Header</h1>
+    </div>
+    <div>
+        <img src="" />
+    </div>
+    <div style="height: 120px;">
+        <div class="box">Hello</div>
+        <div class="box">World</div>
+        <div class="box">Good</div>
+    </div>
+
+    <script>
+        $(document).ready(function (){
+            $('#message').text('Message');
+            console.log($('#message').text());
+
+            $("h1").css('color', 'red');
+            $("h1").css('background', 'black');
+
+            var src = $('script').attr('src');
+            $('body').append(`<div style='clear:both;'>${src}</div>`);
+            $('img').attr('src', 'https://via.placeholder.com/100X100.png');
+
+            $('.box').each(function (){
+                console.log($(this).text());
+            });
+        });
+    </script>
+</body>
+</html>

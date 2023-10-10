@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        alert("입력했어요");
+        let value = prompt("글자를 입력해 주세요.",0);
+        
+        var windowWidth = window.innerWidth || document.documentElement.clientWidth ||
+        document.body.clientWidth;
+        var windowHeight = window.innerHeight || document.documentElement.clientHeight ||
+        document.body.clientHeight;
+
+        document.write("웹 브라우저의 너비는"+windowWidth+"픽셀이고,높이는"+windowHeight+
+        "픽셀입니다.<br>");
+
+        document.write("현재 문서의 주소는"+location.href+"입니다<br>");
+        document.write("현재 문서의 파일 경로명은 "+location.pathname+"입니다.<br>");
+
+        location.href = "https://www.daum.net/";
+        //location.assign("https://www.daum.net/");
+
+        document.write("현재 사용 중인 브라우저의 이름은"+navigator.appName+"입니다.<br>");
+        document.write("도한, 해당 브라우저의 코드명은"+navigator.appCodeName+"입니다.<br>");
+        document.write("userAgent 프로퍼티 추가 정보는"+navigator.userAgent+"입니다.<br>");
+        document.write("현재 브라우저가 실행되고 있는 운영체제는"+navigator.platform+"입니다.<br>");
+        
+
+    </script>
+    
+</body>
+</html>

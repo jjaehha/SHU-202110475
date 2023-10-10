@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Subway_202110475_김재하/1.0.0": {
+        "runtime": {
+          "Subway_202110475_김재하.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Subway_202110475_김재하/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

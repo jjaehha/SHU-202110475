@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <title>W11 project 202110475 김재하</title>
+    <script>
+        var num = parseInt(prompt("숫자를 입력하시오",""));
+        var thousand = parseInt(num/1000);
+        var hundred = parseInt(num%1000/100);
+        var ten = parseInt(num%1000%100/10);
+        var one = parseInt (num%1000%100%10/1);
+
+        alert('천의 자리: ' + thousand + ', 백의자리: ' + hundred + ', 십의자리: ' + ten + ', 일의자리: ' + one); 
+    </script>
+</html>

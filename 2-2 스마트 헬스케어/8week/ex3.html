@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    div id="divbox" style="width:200px;height:200px; background: yellowgreen;">
+    </div>
+    <div id="mouseXYText"> </div>
+    <br›<br>
+    <input id="inputbox" type="text" style="width: 200px;"/>
+    <div id="keyCodeText"> </div>  
+
+    <script>
+        window. onload = function() {
+
+            document.getElementById("divbox").onclick = function(event) {
+                document.getElementById("mouseXYText").innerHTML =
+                    "mouse >>>> " + event.clientX + " , " + event.clientY ;
+            };
+
+            document.getElementById("inputbox").addEventListener("keyup", function(event) {
+                document.getElementById("mouseXYText").innerHTML =
+                    "keyCode >>>> " + event.keyCode;
+            });
+        };
+            </script>
+</body>
+</html>

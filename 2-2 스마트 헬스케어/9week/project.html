@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label for="username">숫자 야구 게임</label></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="username">유저 이름</label></td>
+                <td><input id="username" type="text" name="username" value="홍길동" /></td>
+            </tr>
+            <tr>
+                <td>생성 숫자</td>
+                <td><input id="gen_text" type="text" /></td>
+            </tr>
+            <tr>
+                <td>생성 숫자</td>
+                <td><input id="try_text" type="text"</td>
+            </tr>
+            <tr>
+                <td>숫자 입력</td>
+                <td><input id="user_num1" type="text" /></td>
+                <td><input id="user_num2" type="text" /></td>
+                <td><input id="user_num3" type="text" /></td>
+                <td> <input id="btn_input_usernum" type="button" value="숫자 맞추기" /> </td>
+            </tr>
+            <tr>
+                <td>상태 메세지</td>
+                <td><div id="result_text" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea style="width: 100%; height: 300px" id="history_text" ></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        let rand_num = [];
+        let user_input = [];
+        let history = [];
+        let strike_num = 0;
+        let ball_num = 0;
+        let msg = "";
+        let gameCount = 2;
+        let nowTry = 1; // 시행 횟수 저장
+
+        let comUI = document.getElementById("gen_text");
+        let userUI = document.getElementById("user_text");
+        let resultUI = document.getElementById("result_text");
+        let tryUI = document.getElementById("try_text");
+
+        window.onload = function () {
+            let inputBtn = document.getElementById("btn_input_usernum");
+            inputBtn.onclick = actionInput;
+
+            genGameNumber();
+            comUI.value = rand_num.toString();
+            tryUI.value = nowTry;
+        };
+
+        // 입력한 숫자가 맞는지 확인하는 버튼에 대한 이벤트핸들러
+        function actionInput() {
+            let res = getUserNumber();
+
+            if (res == false) {
+                resultUI.innerHTML = "숫자 입력 에러";
+            }
+
+            msg = compareNumber();
+            resultUI.innerHTML = msg;
+
+            res = checkClear();
+            if (res == 1) {
+                comUI.value = rand_num.toString();
+                printHistory();
+            } else if (res == -1) {
+                comUI.value = rand_num.toString();
+                printHistory();
+            } else {
+                clearUserNumber();
+            }
+            tryUI.value = nowTry;
+        }
+        function checkClear() {
+            if (strike_num == 3) {
+            resultUI.innerHTML = "축하합니다. 게임을 클리어 하였습니다.";
+            alert("축하합니다. 게임을 클리어 하였습니다.");
+            return 1;
+        } else if (nowTry == gameCount) {
+            resultUI.innerHTML = "게임을 클리어 하지 못했습니다. 다음 기회에~~";
+            alert("게임을 클리어 하지 못했습니다. 다음 기회에 ~~")
+            return -1;
+        } else {
+            nowTry++;
+        }
+
+        return 0;
+        }
+        
+        // UI로부터 사용자가 입력한 숫자 받아서 user_input, history에 저장
+        function getUserNumber() {
+            let userValue = 0;
+            let num1Obj = document.getElementById("user_num1");
+            let num2Obj = document.getElementById("user_num1");
+            let num3Obj = document.getElementById("user_num1");
+
+            if (num1Obj.value == "" || num2Obj.value == "" || num3Obj.value == "") {
+                return false;
+            }
+
+            user_input = [];
+            userValue = Number(num1Obj.value);
+            user_input.push(userValue);
+            userValue = Number(num2Obj.value);
+            user_input.push(userValue);
+            userValue = Number(num3Obj.value);
+            user_input.push(userValue);
+
+            let historyObj = {};
+            historyObj.input = user_input;
+            history.push(historyObj);
+
+            return true;
+        }
+
+        // 사용자 숫자 입력UI 비우기
+        function clearUserNumber() {
+            document.getElementById("user_num1").value = "";
+            document.getElementById("user_num2").value = "";
+            document.getElementById("user_num3").value = "";
+            document.getElementById("user_num1").focus();
+        }
+
+        function genGameNumber() {
+            let value = 0;
+            for (let i = 0; i < 3; i++) {
+                value = Math.floor(Math.random() * 10); // 0~9
+                rand_num.push(value);
+            }
+        }
+
+        function compareNumber() {
+        strike_num = 0;
+        ball_num = 0;
+        let match_index = -1;
+        for (i in user_input) {
+            match_index = rand_num.indexOf(user_input[i]);
+            if (match_index != -1) {
+                console.log(" >> " + match_index, i);
+                if (match_index == i) {
+                    strike_num++;
+            } else {
+                 ball_num++;
+            }
+        }
+    }
+    let resultStr = strike_num + " 스트라이트 , " + ball_num + " 볼 ";
+    history[history.length - 1].result = resultStr;
+    return resultStr;
+}
+
+function printHistory() {
+    let msg = "";
+    let historyUI = document.getElementById("history_text");
+
+    for (let idx in history) {
+        msg += (parseInt(idx) + 1) + "회차 : " + 
+            history[idx].input + " --> " + history[idx].result + "\n";
+    }
+    historyUI.value = msg;
+} 
+
+</script>
+</body>
+</html>

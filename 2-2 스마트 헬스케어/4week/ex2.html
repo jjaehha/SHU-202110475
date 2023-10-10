@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "abcDEFabc";
+        console.log(str.indexOf("abc")); // 0 -> 자바스크립트에서 인덱스는 0부터 시작함.
+        console.log(str.indexOf("abcd")); // -1 -> 문자열을 비교할때 문자의 대소문자를 구분함.
+        console.log(str.indexOf("abc", 3)); // 6 -> 인덱스 3부터 'abc'를 찾기 시작함.
+
+        console.log(str.replace(/abc/gi, "ddd")); //"abc"로 하면 1개만 바꿈
+        console.log(str.replaceAll("abc", "ddd")); // 최신 브라우저엣 적용
+    </script>
+</body>
+</html>

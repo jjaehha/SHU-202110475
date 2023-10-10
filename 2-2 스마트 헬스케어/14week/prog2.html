@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./images/0.png" id="img1"/>
+
+    <script>
+        let idx = 0;
+        let imgCom = document.querySelector("#img1");
+
+        setInterval(changeRunner,1,1);
+
+        function changeRunner() {
+            let imaIndex = idx % 15;
+            imgCom.setAttribute("src", `./images/${imgIndex}.png`)
+            idx++;
+        }
+    </script>
+</body>
+</html>

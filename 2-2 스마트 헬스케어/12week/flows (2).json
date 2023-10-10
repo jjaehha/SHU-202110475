@@ -1,0 +1,323 @@
+[
+    {
+        "id": "b648b6f1006ce52b",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "798a95aa7d9c8970",
+        "type": "inject",
+        "z": "b648b6f1006ce52b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "num1",
+                "v": "100",
+                "vt": "num"
+            },
+            {
+                "p": "num2",
+                "v": "200",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "ab2a59328fd1fab4"
+            ]
+        ]
+    },
+    {
+        "id": "ab2a59328fd1fab4",
+        "type": "function",
+        "z": "b648b6f1006ce52b",
+        "name": "function 1",
+        "func": "let result = msg.num1 + msg.num2;\n\nmsg.payload = result;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "ddda29750b2eb17f"
+            ]
+        ]
+    },
+    {
+        "id": "ddda29750b2eb17f",
+        "type": "debug",
+        "z": "b648b6f1006ce52b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e944b5ebd818b89b",
+        "type": "function",
+        "z": "b648b6f1006ce52b",
+        "name": "function 2",
+        "func": "var param = msg.payload;\n\nconsole.log(param);\n\nmsg.payload = {\n test: {\n     node: \"test\"\n },\n obj : param\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "4e435689f8ca19f2"
+            ]
+        ]
+    },
+    {
+        "id": "8e47561903a7fae2",
+        "type": "http in",
+        "z": "b648b6f1006ce52b",
+        "name": "",
+        "url": "/mytest",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "e944b5ebd818b89b"
+            ]
+        ]
+    },
+    {
+        "id": "4e435689f8ca19f2",
+        "type": "http response",
+        "z": "b648b6f1006ce52b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "498de750dc604721",
+        "type": "http in",
+        "z": "b648b6f1006ce52b",
+        "name": "",
+        "url": "/plus",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 340,
+        "wires": [
+            [
+                "bc24ae827ed3811d"
+            ]
+        ]
+    },
+    {
+        "id": "77aae6931e62f755",
+        "type": "http response",
+        "z": "b648b6f1006ce52b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 530,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "bc24ae827ed3811d",
+        "type": "function",
+        "z": "b648b6f1006ce52b",
+        "name": "function 3",
+        "func": "let param = msg.payload;\nconsole.log(param);\nlet result = Number(param.num1) + Number(param.num2) \nmsg.payload = {\n    plus : result\n};  \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "77aae6931e62f755"
+            ]
+        ]
+    },
+    {
+        "id": "86b9a7b7fcc5c440",
+        "type": "inject",
+        "z": "b648b6f1006ce52b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 420,
+        "wires": [
+            [
+                "0a9d829ee31a45d3"
+            ]
+        ]
+    },
+    {
+        "id": "0a9d829ee31a45d3",
+        "type": "function",
+        "z": "b648b6f1006ce52b",
+        "name": "function 4",
+        "func": "msg.payload = {};\nmsg.topic = \n\"SELECT * FROM city limit 10;\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 420,
+        "wires": [
+            [
+                "45d459dacfcdb3fd"
+            ]
+        ]
+    },
+    {
+        "id": "a4bf56480d7637c0",
+        "type": "debug",
+        "z": "b648b6f1006ce52b",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "45d459dacfcdb3fd",
+        "type": "mysql",
+        "z": "b648b6f1006ce52b",
+        "mydb": "55938e7aa9445b1a",
+        "name": "",
+        "x": 490,
+        "y": 420,
+        "wires": [
+            [
+                "a4bf56480d7637c0"
+            ]
+        ]
+    },
+    {
+        "id": "dabed3a51656bdcf",
+        "type": "http in",
+        "z": "b648b6f1006ce52b",
+        "name": "",
+        "url": "/getdata",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 520,
+        "wires": [
+            [
+                "e810f38941466f55"
+            ]
+        ]
+    },
+    {
+        "id": "beff6b2e08992957",
+        "type": "http response",
+        "z": "b648b6f1006ce52b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 650,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e810f38941466f55",
+        "type": "function",
+        "z": "b648b6f1006ce52b",
+        "name": "function 5",
+        "func": "msg.payload = {};\nmsg.topic = \n\"SELECT * FROM city limit 10;\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 520,
+        "wires": [
+            [
+                "28a7987aa12db9ac"
+            ]
+        ]
+    },
+    {
+        "id": "28a7987aa12db9ac",
+        "type": "mysql",
+        "z": "b648b6f1006ce52b",
+        "mydb": "55938e7aa9445b1a",
+        "name": "",
+        "x": 470,
+        "y": 520,
+        "wires": [
+            [
+                "beff6b2e08992957"
+            ]
+        ]
+    },
+    {
+        "id": "55938e7aa9445b1a",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "bigdb",
+        "tz": "",
+        "charset": "UTF8"
+    }
+]

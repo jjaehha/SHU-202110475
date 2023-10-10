@@ -1,0 +1,58 @@
+package chapter9;
+
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class sample_5 extends JFrame implements ActionListener {
+	JTextField tf = new JTextField(5);
+	JTextField tfp = new JTextField(5);
+	JLabel 11 = new JLabel("이름:     ");
+	JLabel 12 = new JLabel("비밀번호:     ");
+	sample_5(){
+		Container c = getContentPane();
+		c.setLayout(new FlowLayout());
+		c.add(l1);
+		c.add(tf);
+		c.add(12);
+		c.add(tfp);
+		JButton bt =new JButton("로그인");
+		bt.addActionListener(this);
+		c.add(bt);
+		setSize(300,300);
+		setVisible(true);
+		}
+	public static void main(string[] args) {
+		new sammple_5();
+	}
+	class abc implements ActionListener{
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (tf.getText().equals("kim") && tfp.getText().equals("1234"))
+			new logon();
+		else
+			new logoff();
+	}
+
+	class logon extends JFrame{
+		logon (){
+			Container c = getContentPane();
+			c.setBackground(Color.green);
+			c.setLayout(new FlowLayout());
+			JLabel la = new JLabel("로그온되었습니당")
+			c.add(la);
+			setSize(300,300);
+			setVisible(true);
+		}
+	}
+	class logoff extends JFrame{
+		logoff (){
+			Container c = getContentPane();
+			c.setBackground(Color.green);
+			c.setLayout(new FlowLayout());
+			JLabel la = new JLabel("실패하였습니당");
+			c.add(la);
+			setSize(300,300);
+			setVisible(true);
+		}
+	}

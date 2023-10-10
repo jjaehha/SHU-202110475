@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = Math.floor(Math.random()*10);
+        let num2 = Math.floor(Math.random()*10);
+
+        let question = `${num1}+${num2}=`;
+        console.log(question);
+
+        let ans = 0;
+
+        ans = parseInt(prompt(question,0));
+
+        if (ans == num1 + num2) {
+            document.write(question+"="+ans+",-->정답");
+        }else{
+            document.write(question+"="+ans+",-->오답");
+        }
+    </script>
+</body>
+</html>

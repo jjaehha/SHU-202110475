@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Dog(color, name, age){
+            this.color = color;
+            this.name = name;
+            this.age = age;
+            this.breed = function () {
+                return this.color + "" + this.name;
+            }
+        }
+        var myDog = new Dog("검정색","곰",3);
+
+        let name = myDog.name;
+        console.log(name);
+        myDog.name="돌돌이";
+        console.log(myDog.name);
+
+        let str = myDog.breed();
+        console.log(str);
+
+        myDog.newProp = "무서움";
+        console.log(myDog);
+        
+        delete myDog.newProp;
+        console.log(myDog);
+
+        for (key in myDog){
+            console.log(typeof myDog[key]);
+            console.log(myDog[key]);
+        }
+    </script>
+    
+
+    
+</body>
+</html>

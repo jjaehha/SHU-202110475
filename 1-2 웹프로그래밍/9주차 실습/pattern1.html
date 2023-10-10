@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>패턴1</title>
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #menu {
+            width: 260px;
+            float: left;
+        }
+
+        #section {
+            width: 700px;
+            float: right; /* left로 입력해도 상관없습니다. */
+        }
+
+        li { list-style: none; }
+
+        @media screen and (max-width: 767px) {
+            /* 스마트폰 사이즈에서는 전부 해제합니다. */
+            body { width: auto }
+            #menu { width: auto; float: none; }
+            #section { width: auto; float: none; }
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>매뉴A</li>
+            <li>매뉴B</li>
+            <li>매뉴C</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum pretium elit, at iaculis dui congue facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue lectus, sagittis quis commodo commodo, congue a nibh. Donec ornare leo in ipsum consectetur euismod. Sed lorem urna, adipiscing eget pharetra ullamcorper, facilisis id sapien. Phasellus ac pellentesque odio. Curabitur quis tortor vel odio dignissim congue ac sit amet nisl. Nulla placerat nibh quis mi tincidunt pretium.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        User : &nbsp; &nbsp; <input type="text" id="txt" value="user" /><br />
+        Password : &nbsp;&nbsp; <input type="password" id="passwd" value="12345678" /><br />
+        <textarea style="width: 100%;height: 300px;" id="usertext">Hello World</textarea>
+    </form>
+
+<script>
+    window.onload = function () {
+        let value = document. getElementById("txt").value;
+        console.log(value);
+        value = document.getElementById("passwd").value;
+        console.log(value);
+        value = document.getElementById("usertext").value;
+        console.log(value);
+    };
+</script>
+    </form>
+</body>
+</html>

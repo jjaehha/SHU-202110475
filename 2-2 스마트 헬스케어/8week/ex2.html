@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for = "pet-select">Choose a pet:</label>
+        <select id = "pet-select">
+            <option value="">--please choose an option--</option>
+            <option value="dog" selected>Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">hamster</option>
+            <option value="parrot">parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+    </form>
+    
+    <div style = "border: 1px red solid">block-level element - 1</div>
+
+    <span style="border: 1px blue solid">inline-level element 1</span>
+    <span style="border: 1px blue solid">inline-level element 2</span>
+
+    <div style = "border: 1px red solid">block-level element - 2</div>
+
+    <script>
+        window.onload = function () {
+            let value = document.getElementById("pet-select").value;
+            console.log(value);
+        };
+    </script>
+</body>
+</html>

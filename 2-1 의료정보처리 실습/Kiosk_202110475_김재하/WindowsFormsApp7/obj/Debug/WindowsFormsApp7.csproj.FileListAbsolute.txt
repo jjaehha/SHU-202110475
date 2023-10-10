@@ -1,0 +1,34 @@
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe.config
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.pdb
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.AssemblyReference.cache
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.SuggestedBindingRedirects.cache
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form1.resources
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form2.resources
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Properties.Resources.resources
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.GenerateResource.cache
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
+C:\Users\H319-29\source\repos\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.AssemblyReference.cache
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.SuggestedBindingRedirects.cache
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form1.resources
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form2.resources
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form3.resources
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form4.resources
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Properties.Resources.resources
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.GenerateResource.cache
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
+C:\Users\H319-30\Desktop\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form1.resources
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form2.resources
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form3.resources
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form4.resources
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Properties.Resources.resources
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Kiosk_202110475_김재하\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb

@@ -1,0 +1,40 @@
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\bin\Debug\net6.0-windows\Subway_202110475_김재하.exe
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\bin\Debug\net6.0-windows\Subway_202110475_김재하.deps.json
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\bin\Debug\net6.0-windows\Subway_202110475_김재하.runtimeconfig.json
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\bin\Debug\net6.0-windows\Subway_202110475_김재하.dll
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\bin\Debug\net6.0-windows\Subway_202110475_김재하.pdb
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.csproj.AssemblyReference.cache
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.Form1.resources
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.Properties.Resources.resources
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.csproj.GenerateResource.cache
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.GeneratedMSBuildEditorConfig.editorconfig
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.AssemblyInfoInputs.cache
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.AssemblyInfo.cs
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.csproj.CoreCompileInputs.cache
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.dll
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\refint\Subway_202110475_김재하.dll
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.pdb
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.genruntimeconfig.cache
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\ref\Subway_202110475_김재하.dll
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.Form2.resources
+E:\정보처리 시스템\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.Form3.resources
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\bin\Debug\net6.0-windows\Subway_202110475_김재하.exe
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\bin\Debug\net6.0-windows\Subway_202110475_김재하.deps.json
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\bin\Debug\net6.0-windows\Subway_202110475_김재하.runtimeconfig.json
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\bin\Debug\net6.0-windows\Subway_202110475_김재하.dll
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\bin\Debug\net6.0-windows\Subway_202110475_김재하.pdb
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.Form1.resources
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.Form2.resources
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.Form3.resources
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.Properties.Resources.resources
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.AssemblyInfo.cs
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.dll
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\refint\Subway_202110475_김재하.dll
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.pdb
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\Subway_202110475_김재하.genruntimeconfig.cache
+C:\Users\user\OneDrive\바탕 화면\kimjh\학교\2-1 의료정보처리 실습\Subway_202110475_김재하\Subway_202110475_김재하\obj\Debug\net6.0-windows\ref\Subway_202110475_김재하.dll

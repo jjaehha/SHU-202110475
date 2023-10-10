@@ -1,0 +1,11 @@
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.SuggestedBindingRedirects.cache
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+C:\Users\seven\Documents\카카오톡 받은 파일\건조기온도프로그램2\건조기온도프로그램2\WindowsFormsApp5\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb

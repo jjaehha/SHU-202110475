@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rand_num = [];
+        let value = 0;
+        for (let i = 0; i < 3; i++) {
+            value = Math.floor(Math.random() * 10); // 0~9
+            rand_num.push(value);
+        }
+        console.log(rand_num);
+
+        let user_input = [];
+        for (let i = 0; i < 3; i++) {
+            value = Number(prompt(i + 1 + "번째 숫자를 입력하세요 (0~9)", 1));
+            user_input.push(value);
+        }
+
+        let strike_num = 0;
+        let ball_num = 0;
+        let match_index = -1;
+        for (i in user_input) {
+            match_index = rand_num.indexOf(user_input[i]);
+            if (match_index != -1) {
+                console.log(" >> " + match_index, i);
+                if (match_index == i) {
+                    strike_num++;
+                } else{
+                    ball_num++;
+                }
+            }
+        }
+        console.log("판정 -- "+ strike_num + " 스트라이크 , " +ball_num + " 볼 ");
+        alert("판정 --  " + strike_num + "스트라이크 , " + ball_num + " 볼 ");
+    </script>
+</body>
+</html>

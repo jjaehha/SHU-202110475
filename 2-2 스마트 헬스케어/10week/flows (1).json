@@ -1,0 +1,256 @@
+[
+    {
+        "id": "b6de4f775cda8770",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4eb76af79c3a8fb4",
+        "type": "inject",
+        "z": "b6de4f775cda8770",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "name",
+                "v": "김재하",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Class Javascript",
+        "payload": "hello world",
+        "payloadType": "str",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "29532e1f090b428a"
+            ]
+        ]
+    },
+    {
+        "id": "29532e1f090b428a",
+        "type": "debug",
+        "z": "b6de4f775cda8770",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2e743fad0f6fe762",
+        "type": "inject",
+        "z": "b6de4f775cda8770",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "title",
+                "v": "Bigdata",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "김재하",
+        "payloadType": "str",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "c2c52bed37e14167"
+            ]
+        ]
+    },
+    {
+        "id": "424ca86a6387cb5f",
+        "type": "debug",
+        "z": "b6de4f775cda8770",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c2c52bed37e14167",
+        "type": "template",
+        "z": "b6de4f775cda8770",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"name\" : \"{{payload}}\",\n    \"title\" : \"{{title}}\"\n}",
+        "output": "json",
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "424ca86a6387cb5f"
+            ]
+        ]
+    },
+    {
+        "id": "a2592ba67f20efa6",
+        "type": "inject",
+        "z": "b6de4f775cda8770",
+        "name": "",
+        "props": [
+            {
+                "p": "classname",
+                "v": "A",
+                "vt": "str"
+            },
+            {
+                "p": "classNo",
+                "v": "H242",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "ff154bf22ba30744"
+            ]
+        ]
+    },
+    {
+        "id": "ff154bf22ba30744",
+        "type": "template",
+        "z": "b6de4f775cda8770",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"class\" : \"{{classname}}\",\n    \"No\" : \"{{classNo}}\"\n}",
+        "output": "json",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "c22f062c8e99de90"
+            ]
+        ]
+    },
+    {
+        "id": "c22f062c8e99de90",
+        "type": "debug",
+        "z": "b6de4f775cda8770",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "981a920af1cfaecc",
+        "type": "inject",
+        "z": "b6de4f775cda8770",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "e736bbd07db19f67"
+            ]
+        ]
+    },
+    {
+        "id": "4c49935192490138",
+        "type": "debug",
+        "z": "b6de4f775cda8770",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "e736bbd07db19f67",
+        "type": "function",
+        "z": "b6de4f775cda8770",
+        "name": "function 1",
+        "func": "var timestr = new Date(msg.payload).toLocaleDateString(\"ko-KR\");\n\nmsg.payload = timestr;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 400,
+        "wires": [
+            [
+                "4c49935192490138"
+            ]
+        ]
+    }
+]

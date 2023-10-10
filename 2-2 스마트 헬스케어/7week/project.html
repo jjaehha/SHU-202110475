@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+              let rand_num = [];
+        let user_input = [];
+        let history = [];
+        let strike_num = 0;
+        let ball_num = 0;
+        let msg = "";
+        let gameCount = 2;
+
+        window.onload = function () {
+
+            let comUI = document.getElementById("gen_text");
+            let userUI = document.getElementById("user_text");
+            let resultUI = document.getElementById("result_text");
+
+                genGameNumber();
+                comUI.value = rand_num.toString();
+                console.log(rand_num);
+         for (let i = 1; i <= gameCount; i++) {
+                getUserNumber();
+                userUI.value = user_input;
+                msg = compareNumber();
+                alert(msg);
+                resultUI.innerHTML = msg;
+            if (strike_num == 3) {
+                resultUI.innerHTML = "축하합니다. 게임을 클리어 하였습니다.";
+             break;
+            } else if (i == gameCount) {
+                resultUI.innerHTML = "게임을 클리어 하지 못했습니다. 다음 기회에~~";
+                }
+                }
+                printHistory();
+                comUI.value = rand_num.toString();
+        };
+                function genGameNumber() {
+                let value = 0;
+        for (let i = 0; i < 3; i++) {
+                value = Math.floor(Math.random() * 10); // 0~9
+                rand_num.push(value);
+                 }
+        }
+                function getUserNumber() {
+                user_input = [];
+        for (let i = 0; i < 3; i++) {
+                value = Number(prompt(i + 1 + "번째 숫자를 입력하세요 (0~9)", 1));
+                user_input.push(value);
+                 }
+                let historyObj = {};
+                historyObj.input = user_input;
+                history.push(historyObj);
+        }
+                function compareNumber() {
+                strike_num = 0;
+                ball_num = 0;
+                let match_index = -1;
+        for (i in user_input) {
+            match_index = rand_num.indexOf(user_input[i]);
+        if (match_index != -1) {
+            console.log(" >> " + match_index, i);
+        if (match_index == i) {
+            strike_num++;
+        } else {
+             ball_num++;
+        }
+        }
+        }
+            let resultStr = strike_num + " 스트라이트 , " + ball_num + " 볼 ";
+            history[history.length - 1].result = resultStr;
+            return resultStr;
+        }
+            function printHistory() {
+            let msg = "";
+            let historyUI = document.getElementById("history_text");
+
+        for (let idx in history) {
+            msg += (parseInt(idx) + 1) + "회차 : " + history[idx].input + " --> " + history[idx].result + "\n";
+        }
+            historyUI.value = msg;
+        } 
+    </script>
+</body>
+</html>

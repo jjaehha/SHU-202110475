@@ -1,0 +1,30 @@
+package chapter9;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.evemt.*;
+public class SliderEx extends JFrame{
+	JLabel la;
+	SliderEx(){
+		Container c=getContentPane();
+		c.setLayout(new FlowLayout());
+		JSlider s =new JSlider(JSlider.HORIZONTAL,0,200,100);
+		s.setPaintLabels(true);
+		s.setPaintTicks(true);
+		s.setPaintTrack(true);
+		s.setMajorTickSpacing(50);
+		s.setMinorTickSpacing(10);
+		s.addChangeListener(new abc());
+		c.add(s);
+		setSize(300,100);
+		setVisible(true);
+	}
+	class abc implements ChangeListener{
+		public void state(ChangeEvent e) {
+			int r =s.getValue();
+			la.setBackground(new Color(r));
+		}
+	}
+	public static voidd main(String[] args) {
+	}
+}

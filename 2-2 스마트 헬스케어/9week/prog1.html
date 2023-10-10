@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputbox" />
+    <input type="button" id="e_btn1" value="입력">
+    <div id="outbox" style="width:300px; height:100px; border: 1px blue solid;"></div>
+
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $("#e_btn1").click (function(){
+            let value = $("#inputbox").val();
+            $("#outbox").text(value);
+        });
+    </script>
+</body>
+</html>
